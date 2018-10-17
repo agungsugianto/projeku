@@ -65,10 +65,6 @@
                 </p>
               </div>
             </div>
-
-            <div class="text-center">
-              <span class="text-muted">Back to</span> <a href="index-2.html">Home</a>
-            </div>
           </div>
         </div>
       </div>

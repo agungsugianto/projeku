@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('/about', function () {
 	return view('frontend.about');
 });
+Route::get('/produk', function () {
+	return view('frontend.produk');
+});
 Route::get('/product/{barangs}', 'FrontendController@singleproduct')->name('singleproduct');
 
 //BackEnd
@@ -30,6 +33,7 @@ Route::group(['prefix'=>'/admin', 'middleware'=>['auth']], function () {
     Route::resource('/galeri', 'GaleriController');
 });
 Route::resource('index','FrontendController');
-Route::get('/','FrontendController@barang')->name('barang');
-Route::resource('index','FrontendController');
-Route::get('about','FrontendController@about')->name('about');
+Route::get('/','FrontendController@about')->name('about');
+Route::get('/product','FrontendController@product')->name('product');
+// Route::get('/','FrontendController@category')->name('category');
+Route::get('product/kategori/{kategori}', 'FrontendController@barangkategori');

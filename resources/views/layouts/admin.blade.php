@@ -8,9 +8,9 @@
 
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="icon" src="ion-pulse.icon">
+	<link rel="shortcut icon" href="/img/head.png">
 
-	<title>Aksesoris HP</title>
+	<title>Dunia Aksesoris</title>
 
 	<!-- External fonts -->
 	<link href="https://brick.a.ssl.fastly.net/Montserrat:300,400,500,600,700" rel="stylesheet">

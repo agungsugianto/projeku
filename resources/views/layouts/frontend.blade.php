@@ -9,7 +9,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BIGBAG Store - Ecommerce Bootstrap Template</title>
+	<title>Dunia Aksesoris</title>
 
 	<!-- PLUGINS CSS STYLE -->
 	<link href="{{asset ('/bigbag/plugins/jquery-ui/jquery-ui.css')}}" rel="stylesheet">
@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('/css/sweetalert2.css')}}">
 
 	<!-- Icons -->
-	<link rel="shortcut icon" href="bigbag/img/favicon.png">
+	<link rel="shortcut icon" href="/img/head.png">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,10 +67,6 @@
 
 		<!-- HEADER -->
 		<div class="header clearfix">
-
-			<!-- TOPBAR -->
-			@include('partials.frontend.topbar')
-
 			<!-- NAVBAR -->
 			@include('partials.frontend.navbar')
 		</div>
@@ -78,193 +74,102 @@
 
 	<!-- BANNER -->
 	@include('partials.frontend.banner')
-	<!-- End Banner -->
+		<!-- End Banner -->
 
 	<!-- MAIN CONTENT SECTION -->
 	<section class="mainContent clearfix">
 		<div class="container">
-
-			<div class="page-header">
-				<h4>Featured Collection</h4>
-			</div>
-			<div class="row featuredCollection margin-bottom">
-				<div class="col-md-4 col-12">
-					<div class="thumbnail" onclick="location.href='single-product.html';">
-						<div class="imageWrapper">
-							<img src="bigbag/img/home/featured-collection/featured-collection-01.jpg" alt="feature-collection-image">
-							<div class="caption">
-								<h3>Shoes Collections</h3>
-								<small>Start From $59.00</small>
-							</div>
-							<div class="masking">
-								<a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-12">
-					<div class="thumbnail" onclick="location.href='single-product.html';">
-						<div class="imageWrapper">
-							<img src="bigbag/img/home/featured-collection/featured-collection-02.jpg" alt="feature-collection-image">
-							<div class="caption">
-								<h3>Bags BagPacks</h3>
-								<small>Start From $150.00</small>
-							</div>
-							<div class="masking">
-								<a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-12">
-					<div class="thumbnail" onclick="location.href='single-product.html';">
-						<div class="imageWrapper">
-							<img src="bigbag/img/home/featured-collection/featured-collection-03.jpg" alt="feature-collection-image">
-							<div class="caption">
-								<h3>Glasses Collections</h3>
-								<small>Start From $25.00</small>
-							</div>
-							<div class="masking">
-								<a href="product-grid-left-sidebar.html" class="btn viewBtn">View Products</a>
-							</div>
-						</div>
-					</div>
-				</div>
+		<img src="{{asset('img/iklan.PNG')}}" style="width:1100px;"><br><br><br><br><br>
+		<div class="page-header">
+		<h4>Produk Unggulan</h4>
 			</div>
 
-			<div class="page-header">
+			<div class="row featuredProducts featuredProductsSlider margin-bottom">
+			@foreach($galeris as $data)
+<div class="slide col-md-3">
+					<div class="productImage">
+						<img src="{{asset('/img/'.$data->gambar.'' )}}" alt="featured-product-img">
+						<div class="productMasking">	
+						</div>
+					</div>
+				</div>@endforeach
+			</div>
+
+
+			<!-- <div class="page-header">
 				<h4>Featured Products</h4>
 			</div>
 
 			<div class="row featuredProducts featuredProductsSlider margin-bottom">
-				@yield('product')
-				<!-- <div class="slide col-md-3">
+			
+				 <div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-02.jpg" alt="featured-product-img">
+					<a href ="/img/kabeldata.jpg">
+						<img src="/img/kabeldata.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
-					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Dip Dyed Sweater</h4>
-						</a>
-						<h3>$149.00</h3>
+						<a/>
 					</div>
 				</div>
 				<div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-03.jpg" alt="featured-product-img">
+					<a href ="/img/anticrack.jpg">
+						<img src="/img/anticrack.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
+						<a/>
 					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Scarf Ring Corner</h4>
-						</a>
-						<h3>$79</h3>
+					
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/casing.jpg">
+						<img src="/img/casing.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
 					</div>
 				</div>
 				<div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-04.jpg" alt="featured-product-img">
+					<a href ="/img/tongsis.jpg">
+						<img src="/img/tongsis.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
+						<a/>
 					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Sun Buddies</h4>
-						</a>
-						<h3>$109</h3>
-					</div>
+					
 				</div>
 				<div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-05.jpg" alt="featured-product-img">
+					<a href ="/img/headphone.jpg">
+						<img src="/img/headphone.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
+						<a/>
 					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Scarf Ring Corner</h4>
-						</a>
-						<h3>$79</h3>
-					</div>
+					
 				</div>
 				<div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-06.jpg" alt="featured-product-img">
+					<a href ="/img/picseye.jpg">
+						<img src="/img/picseye.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
+						<a/>
 					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Scarf Ring Corner</h4>
-						</a>
-						<h3>$79</h3>
-					</div>
+					
 				</div>
 				<div class="slide col-md-3">
 					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-07.jpg" alt="featured-product-img">
+					<a href ="/img/temperedgllas.jpg">
+						<img src="/img/temperedgllas.jpg" alt="featured-product-img">
 						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
 						</div>
-					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Scarf Ring Corner</h4>
-						</a>
-						<h3>$79</h3>
+						<a/>
 					</div>
 				</div>
-				<div class="slide col-md-3">
-					<div class="productImage">
-						<img src="bigbag/img/home/featured-product/product-09.jpg" alt="featured-product-img">
-						<div class="productMasking">
-							<ul class="list-inline btn-group" role="group">
-								<li><a class="btn btn-default btn-wishlist"><i class="fa fa-heart-o"></i></a></li>
-								<li><a href="javascript:void(0)" class="btn btn-default" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!" class="btn btn-default"><i class="fa fa-shopping-basket"></i></a></li>
-								<li><a data-toggle="modal" href="-2.html" class="btn btn-default"><i class="fa fa-eye"></i></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="productCaption">
-						<a href="single-product.html">
-							<h4>Scarf Ring Corner</h4>
-						</a>
-						<h3>$79</h3>
-					</div>
-				</div> -->
-			</div>
+			</div> -->
 
 			<!-- <div class="page-header">
 				<h4>Latest Articles</h4>
@@ -324,7 +229,7 @@
 	</section>
 
 	<!-- LIGHT SECTION -->
-	<section class="lightSection clearfix">
+	<!-- <section class="lightSection clearfix">
 		<div class="container">
 			<div class="owl-carousel partnersLogoSlider">
 				<div class="slide">
@@ -369,7 +274,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- FOOTER -->
 	@include('partials.frontend.footer')

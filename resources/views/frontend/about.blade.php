@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIGBAG Store - Ecommerce Bootstrap Template</title>
+    <title>Dunia Aksesoris</title>
 
     <!-- PLUGINS CSS STYLE -->
     <link href="{{asset ('/bigbag/plugins/jquery-ui/jquery-ui.css')}}" rel="stylesheet">
@@ -26,8 +26,7 @@
     <link rel="stylesheet" href="{{asset ('/bigbag/css/default.css')}}" id="option_color">
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="bigbag/img/favicon.png">
-
+	<link rel="shortcut icon" href="/img/head.png">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,10 +61,6 @@
 
 		<!-- HEADER -->
 		<div class="header clearfix">
-
-			<!-- TOPBAR -->
-			@include('partials.frontend.topbar')
-
 			<!-- NAVBAR -->
 			@include('partials.frontend.navbar')
 
@@ -77,17 +72,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="page-title">
-							<h2>About Us</h2>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<ol class="breadcrumb float-right">
-							<li>
-								<a href="{{ url('/')}}">Home</a>
-							</li>
-							<li class="active">About Us</li>
-						</ol>
+						
 					</div>
 				</div>
 			</div>
@@ -97,84 +82,111 @@
 		<section class="mainContent clearfix aboutUsInfo">
 			<div class="container">
 				<div class="page-header">
-					<h3>Suspendisse suscipit vestibulum dignissim</h3>
+					<h3>Tentang Kami</h3>
 				</div>
 				<div class="row">
 					<div class="col-md-6 order-sm-12">
-						<img src="bigbag/img/about-us/title-img.jpg" alt="about-us-img">
+						<img src="/img/toko.jpg" alt="about-us-img">
 					</div>
 					<div class="col-md-6 order-sm-1">
-						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p>Mauris lobortis augue ex, ut faucibus nisi mollis ac. Sed volutpat scelerisque ex ut ullamcorper. Cras at velit quis sapien dapibus laoreet a id odio. Sed sit amet accumsan ante, eu congue metus. Aenean eros tortor, cursus quis feugiat sed, vestibulum vel purus. Etiam aliquam turpis quis blandit finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor placerat lectus, facilisis ornare leo tincidunt vel. Duis rutrum felis felis, eget malesuada massa tincidunt a.</p>
-						<ul class="unorder-list lists">
-							<li>Neque porro quisquam est,</li>
-							<li>qui dolorem ipsum quia dolor sit amet, </li>
-							<li>consectetur, adipisci velit, sed quia</li>
-							<li>non numquam eius modi tempora incidunt </li>
-							<li>ut labore et dolore magnam aliquam</li>
-						</ul>
+						<p>Tentang web ini kami hanya memberi informasi saja . Tidak ada transaksi atau jual beli online , tapi di web site ini Anda bisa melihat produk-produk atau barang yang di sediakan oleh kami . Jika Anda tertarik dengan produk yang di sediakan oleh kami Anda bisa datang ke alamat ini</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.316395622828!2d107.58289831410342!3d-6.971935494963263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9286c4bae47%3A0x61ba1f705eb5a06b!2sJl.+Sukamenak+No.124%2C+Sukamenak%2C+Margahayu%2C+Bandung%2C+Jawa+Barat+40227!5e0!3m2!1sid!2sid!4v1539154814370" width="500" height="436" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div></div>
+			</div>
+			</section>
+			<!-- <section class="mainContent clearfix">
+		<div class="container"> 
+				<div class="page-header">
+				<h4>Produk Unggulan</h4>
+			</div>
+
+			<div class="row featuredProducts featuredProductsSlider margin-bottom">
+			@yield('About') -->
+				 <!-- <div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/kabeldata.jpg">
+						<img src="/img/kabeldata.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
 					</div>
 				</div>
-			</div>
-		</section>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/anticrack.jpg">
+						<img src="/img/anticrack.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+					
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/casing.jpg">
+						<img src="/img/casing.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/tongsis.jpg">
+						<img src="/img/tongsis.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+					
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/headphone.jpg">
+						<img src="/img/headphone.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+					
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/picseye.jpg">
+						<img src="/img/picseye.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+					
+				</div>
+				<div class="slide col-md-3">
+					<div class="productImage">
+					<a href ="/img/temperedgllas.jpg">
+						<img src="/img/temperedgllas.jpg" alt="featured-product-img">
+						<div class="productMasking">
+						</div>
+						<a/>
+					</div>
+				</div> -->
+			<!-- </div>
+		</section> -->
 
 		<!-- DARK SECTION -->
 		<section class="darkSection clearfix">
 			<div class="container">
-				<h3>Our Store Locations</h3>
+				<h3>Lokasi</h3>
 				<div class="row">
 					<div class="col-md-3">
 						<div class="thumbnail">
 							<div class="caption">
-								<h5>New York</h5>
+								<h5>Bandung , Jawa barat</h5>
 								<address>
-									Krakovská 1307/22, 110 00 N,Y <br>
-									Vězeňská 910/2, 110 00 N,Y-Staré  <br>
-									Město Na Hřebenkách 2, 150 00  <br>
-									N,Y
+								Jl. Sukamenak No.124
+Jl. Sukamenak No.124, Sukamenak, Margahayu, Bandung, Jawa Barat 40227<br>
 								</address>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<div class="caption">
-								<h5>Paris</h5>
-								<address>
-									Bebelpl. 1, 10117 Paris <br>
-									Jablonskistraße 16, 10405 Paris <br>
-									Rigaer Str. 9, 10247 Paris
-								</address>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<div class="caption">
-								<h5>New York</h5>
-								<address>
-									Krakovská 1307/22, 110 00 N,Y <br>
-									Vězeňská 910/2, 110 00 N,Y-Staré  <br>
-									Město Na Hřebenkách 2, 150 00  <br>
-									N,Y
-								</address>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<div class="caption">
-								<h5>Paris</h5>
-								<address>
-									Bebelpl. 1, 10117 Paris <br>
-									Jablonskistraße 16, 10405 Paris <br>
-									Rigaer Str. 9, 10247 Paris
-								</address>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-12">
-						<button type="button" class="btn btn-primary-outlined btn-default">Check more</button>
 					</div>
 				</div>
 			</div>
@@ -185,41 +197,41 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h3>Our Peoples</h3>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<img src="bigbag/img/about-us/people-01.jpg" alt="people-image">
-							<div class="caption">
-								<h5>Adam Smith</h5>
-								<p>CEO</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<img src="bigbag/img/about-us/people-02.jpg" alt="people-image">
-							<div class="caption">
-								<h5>Jennifer</h5>
-								<p>CTO</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3">
-						<div class="thumbnail">
-							<img src="bigbag/img/about-us/people-03.jpg" alt="people-image">
-							<div class="caption">
-								<h5>Andrew Haige</h5>
-								<p>Marketing Director</p>
-							</div>
-						</div>
+						<h3>Orang yang bersangkutan</h3>
 					</div>
 					<div class="col-md-3">
 						<div class="thumbnail">
 							<img src="bigbag/img/about-us/people-04.jpg" alt="people-image">
 							<div class="caption">
-								<h5>Andy Blakly</h5>
-								<p>Creative Director</p>
+								<h5>Syahrini</h5>
+								<p>Pemilik Toko</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img src="/img/antek1.jpg" alt="people-image">
+							<div class="caption">
+								<h5>Widi Ayu Feby Anggraini Affandi</h5>
+								<p>Desain</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img src="/img/antek2.jpg" alt="people-image">
+							<div class="caption">
+								<h5>Angga Nur Aprizal</h5>
+								<p>Pembuat</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="thumbnail">
+							<img src="/img/kasep.jpg" alt="people-image" style="height:256px;">
+							<div class="caption">
+								<h5>Agung Sugiyanto</h5>
+								<p>Pembuat</p>
 							</div>
 						</div>
 					</div>

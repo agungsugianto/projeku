@@ -15,6 +15,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         schema::defaultStringLength(191);
+        view()->composer('frontend.produk', function ($view) {
+            $kategori = \App\Kategori::all();
+            // $category = \App\Category::all();
+            // $tag = \App\Tag::all();
+            $recent = \App\Barang::orderBy('created_at', 'desc')->take(4)->get();
+            $view->with(compact('kategori', 'recent'));
+        });
     }
 
     /**

@@ -1,25 +1,21 @@
-@extends('frontend.index')
+@extends('layouts.frontend')
 @section('product')
 
 @foreach($barangs as $data)
-<div class="slide col-md-3">
-	<div class="productImage clearfix">
-	<a href="{{ asset('/img/'.$data->foto.'')}} ">
-		<img src="{{ asset('/img/'.$data->foto.'')}}" alt="featured-product-img" height="250px">
-		<div class="productMasking">
-			<ul class="list-inline btn-group" role="group">
-			<li><a href="/product/{{$data->slug}}" class="nav-link-active"></a></li>
-				<li><a href="/product/{{$data->slug}}" class="nav-link-active"><i class="fa fa-eye"></i></a></li>
-				<li><a href="/product/{{$data->slug}}" class="nav-link-active"></i></a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="productCaption clearfix">
-			<h4>{{ $data->nama_barang }}</h4>
-		<p>{!!str_limit($data->deskripsi)!!}</p>
-		<h3>Rp. {{ $data->harga }}</h3>
-	</div>
-</div>
-@endforeach
+<div class="col-md-4 col-12">
+					<div class="thumbnail">
+						<div class="imageWrapper">
+							<img src="{{('/img/'.$data->foto.'')}}" alt="feature-collection-image" style="height:300px; widht:300px;">
+							<div class="caption">
+								<h3>{{$data->nama_barang}}</h3>
+								<small>{{$data->harga}}</small>
+							</div>
+							<div class="masking">
+								<a href="/product/{{$data->slug}}" class="btn viewBtn">View Products</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				@endforeach
 
 @endsection

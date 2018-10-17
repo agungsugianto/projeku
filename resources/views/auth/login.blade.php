@@ -93,7 +93,7 @@
                                 </form>
 
                                 <div class="margin-tb-10">
-                                    <a href="{{ route('password.request') }}">
+                                    <a href="404">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 </div>
@@ -101,7 +101,7 @@
                         </div>
 
                         <div class="text-center">
-                            <span class="text-muted">Dont have an account?</span> <a href="{{ route('login') }}">{{ __('Sign Up') }}</a>
+                            <span class="text-muted">Dont have an account?</span> <a href="404">{{ __('Sign Up') }}</a>
                         </div>
                     </div>
                 </div>

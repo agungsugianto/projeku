@@ -12,19 +12,36 @@ class FrontendController extends Controller
 {
      public function index()
     {
-        return view ('frontend.index');
+        $galeris = Galeri::all();
+        return view ('layouts.frontend',compact('galeris'));
     }
 
     public function barang()
     {
         $barangs = Barang::all();
-        return view ('product.index',compact('barangs')); 
+        return view ('layouts.frontend',compact('barangs')); 
     }
+    public function barangkategori(Kategori $kategori)
+    {
+        $barangs = $kategori->Barang()->latest()->paginate(5);
+        return view('frontend.produk', compact('barangs'));
+    }
+    public function product()
+    {
+        $barangs = Barang::all();
+        return view ('frontend.produk',compact('barangs')); 
+    }
+
     public function about()
     {
         $galeris = Galeri::all();
-        return view ('About.index',compact('galeris')); 
+        return view ('layouts.frontend',compact('galeris')); 
     }
+    // public function category()
+    // {
+    //     $kategoris = Kategori::all();
+    //     return view ('category.index',compact('kategoris')); 
+    // }
 
     public function singleproduct(Barang $barangs)
     {

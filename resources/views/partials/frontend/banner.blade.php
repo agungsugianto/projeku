@@ -14,7 +14,7 @@
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300" >
-								<img src="bigbag/img/home/banner-slider/sl1.png" alt="slider-image" style="width: auto; height: auto;">
+								<img src="/img/casingg.png" alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft"
@@ -25,7 +25,7 @@
 								data-start="2000"
 								data-easing="Back.easeInOut"
 								data-endspeed="300">
-								Summer Hat
+								Casing Unik
 							</div>
 
 							<div class="tp-caption rs-caption-3 sft"
@@ -38,22 +38,10 @@
 								data-endspeed="300"
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
-								Start From - $59.00<br>
+								<br>
 								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
 							</div>
 
-							<div class="tp-caption rs-caption-4 sft"
-								data-hoffset="0"
-								data-y="310"
-								data-x="[15,15,42,15]"
-								data-speed="800"
-								data-start="3500"
-								data-easing="Power4.easeOut"
-								data-endspeed="300"
-								data-endeasing="Power1.easeIn"
-								data-captionhidden="off">
-								<span class="page-scroll"><a href="#" class="btn primary-btn">Buy Now<i class="fa fa-chevron-right"></i></a></span>
-							</div>
 					</div>
 					</li>
 					<li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700"  data-title="Slide 2">
@@ -67,7 +55,7 @@
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300">
-								<img src="bigbag/img/home/banner-slider/sl2.png" alt="slider-image">
+								<img src="/img/head.png" alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft "
@@ -78,7 +66,7 @@
 								data-start="2000"
 								data-easing="Back.easeInOut"
 								data-endspeed="300">
-								Ladies Backpack
+								Headphone
 							</div>
 
 							<div class="tp-caption rs-caption-3 sft"
@@ -91,7 +79,7 @@
 								data-endspeed="300"
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
-								Start From - $259.00 <br>
+								<br>
 								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
 							</div>
 
@@ -105,7 +93,6 @@
 								data-endspeed="300"
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
-								<span class="page-scroll"><a href="#" class="btn primary-btn">Buy Now<i class="fa fa-chevron-right"></i></a></span>
 							</div>
 						</div>
 					</li>
@@ -115,13 +102,13 @@
 
 							<div class="tp-caption rs-caption-1 sft start"
 								data-hoffset="0"
-								data-x="450"
+								data-x="700"
 								data-y="54"
 								data-speed="800"
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300" >
-								<img src="bigbag/img/home/banner-slider/shoe1.png" alt="slider-image" style="width: 781px; height: 416px;">
+								<img src="/img/sb.png" alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft"
@@ -132,7 +119,7 @@
 								data-start="2000"
 								data-easing="Back.easeInOut"
 								data-endspeed="300">
-								Canvas Sneaker
+								Speaker Bluetooth
 							</div>
 
 							<div class="tp-caption rs-caption-3 sft"
@@ -145,7 +132,7 @@
 								data-endspeed="300"
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
-								Start From - $259.00 <br>
+								<br>
 								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
 							</div>
 
@@ -159,7 +146,6 @@
 								data-endspeed="300"
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
-								<span class="page-scroll"><a href="#" class="btn primary-btn">Buy Now<i class="fa fa-chevron-right"></i></a></span>
 							</div>
 						</div>
 					</li>

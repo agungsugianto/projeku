@@ -23,11 +23,14 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-ex1-collapse">
 			<ul class="nav navbar-nav ml-auto">
-				<li class="nav-item active ">
-					<a href="{{ url('/')}}" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+				<li class="nav-item ">
+					<a href="{{ url('/')}}" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Beranda</a>
 				</li>
 				<li class="nav-item">
-					<a href="{{ url('about')}}" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">About Us</b></a>
+					<a href="{{ url('product')}}" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Produk</a>
+				</li>
+				<li class="nav-item">
+					<a href="{{ url('about')}}" class="dropdown-toggle nav-link" role="button" aria-haspopup="true" aria-expanded="false">Tentang</b></a>
 				</li>
 			</ul>
 		</div><!-- /.navbar-collapse -->

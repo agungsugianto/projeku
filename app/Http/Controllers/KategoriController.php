@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Alert;
 use App\Kategori;
 use Illuminate\Http\Request;
-
 class KategoriController extends Controller
 {
     /**

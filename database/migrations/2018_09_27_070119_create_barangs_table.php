@@ -18,11 +18,11 @@ class CreateBarangsTable extends Migration
             $table->string('nama_barang');
             $table->string('slug');
             $table->UnsignedInteger('kategori_id');
-            $table->foreign('kategori_id')->references('id')->on('kategoris')
-            ->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('kategori_id')->references('id')->on('kategoris')->onUpdate('cascade')->onDelete('cascade');
             $table->string('harga');
             $table->string('foto');
             $table->text('deskripsi');
+            $table->text('beli');
             $table->timestamps();
         });
     }

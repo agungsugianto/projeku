@@ -3,7 +3,7 @@
 			<div class="fullscreenbanner">
 				<ul>
 					<li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
-						<img src="bigbag/img/home/banner-slider/slider-bg.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+						<img src="{{asset('bigbag/img/home/banner-slider/slider-bg.jpg')}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 						<div class="slider-caption slider-captionV1 container">
 
 							<div class="tp-caption rs-caption-1 sft start"
@@ -14,7 +14,7 @@
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300" >
-								<img src="/img/casingg.png" alt="slider-image" style="width:400px; height:400px;">
+								<img src="{{asset('/img/casingg.png')}}" alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft"
@@ -39,13 +39,13 @@
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
 								<br>
-								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
+								<small>Casing yang cocok untuk menjadikan fashion hp anda lebih menarik dan lucu</small>
 							</div>
 
 					</div>
 					</li>
 					<li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700"  data-title="Slide 2">
-						<img src="bigbag/img/home/banner-slider/slider-bg.jpg" alt="slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+						<img src="{{asset('bigbag/img/home/banner-slider/slider-bg.jpg')}}" alt="slidebg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 						<div class="slider-caption slider-captionV1 container">
 							<div class="tp-caption rs-caption-1 sft start"
 								data-hoffset="0"
@@ -55,7 +55,7 @@
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300">
-								<img src="/img/head.png" alt="slider-image" style="width:400px; height:400px;">
+								<img src="{{asset('/img/head.png')}}"alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft "
@@ -80,7 +80,7 @@
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
 								<br>
-								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
+								<small>Cocok buat Anda yang suka mendengarkan musik ataupun beramin game,headphone ini siap untuk menyamankan Anda </small>
 							</div>
 
 							<div class="tp-caption rs-caption-4 sft"
@@ -97,7 +97,7 @@
 						</div>
 					</li>
 					<li data-transition="slidehorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 3">
-						<img src="bigbag/img/home/banner-slider/slider-bg.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+						<img src="{{asset('bigbag/img/home/banner-slider/slider-bg.jpg')}}" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
 						<div class="slider-caption slider-captionV1 container">
 
 							<div class="tp-caption rs-caption-1 sft start"
@@ -108,7 +108,7 @@
 								data-start="1500"
 								data-easing="Back.easeInOut"
 								data-endspeed="300" >
-								<img src="/img/sb.png" alt="slider-image" style="width:400px; height:400px;">
+								<img src="{{asset('/img/sb.png')}}" alt="slider-image" style="width:400px; height:400px;">
 							</div>
 
 							<div class="tp-caption rs-caption-2 sft"
@@ -133,7 +133,7 @@
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
 								<br>
-								<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque convallis turpis pharetra pretium nec eu sem.</small>
+								<small>Speaker yang cocok buat Anda yang tidak mau ribet ataupun rumit.</small>
 							</div>
 
 							<div class="tp-caption rs-caption-4 sft"

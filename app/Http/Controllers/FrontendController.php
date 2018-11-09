@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Barang;
 use App\Kategori;
 use App\Galeri;
+use App\Promo;
+use App\barangfoto;
 use File;
 
 class FrontendController extends Controller
@@ -13,14 +15,16 @@ class FrontendController extends Controller
      public function index()
     {
         $galeris = Galeri::all();
-        return view ('layouts.frontend',compact('galeris'));
+        $barangs = Barang::all();
+        $promos = Promo::all();
+        return view ('layouts.frontend',compact('galeris','barangs','promos'));
     }
 
-    public function barang()
-    {
-        $barangs = Barang::all();
-        return view ('layouts.frontend',compact('barangs')); 
-    }
+    // public function barang()
+    // {
+    //     $barangs = Barang::all();
+    //     return view ('layouts.frontend',compact('barangs')); 
+    // }
     public function barangkategori(Kategori $kategori)
     {
         $barangs = $kategori->Barang()->latest()->paginate(5);
@@ -28,26 +32,11 @@ class FrontendController extends Controller
     }
     public function product()
     {
-        $barangs = Barang::all();
+        $barangs = Barang::paginate(8);
         return view ('frontend.produk',compact('barangs')); 
     }
-
-    public function about()
-    {
-        $galeris = Galeri::all();
-        return view ('layouts.frontend',compact('galeris')); 
-    }
-    // public function category()
-    // {
-    //     $kategoris = Kategori::all();
-    //     return view ('category.index',compact('kategoris')); 
-    // }
-
     public function singleproduct(Barang $barangs)
     {
-        // $previous = Artikel::where('id', '<', $artikel->id)->orderBy('id', 'desc')->first();
-        // $next = Artikel::where('id', '>', $artikel->id)->orderBy('id')->first();
-        
         return view('product.singleproduct', compact('barangs'));
     }
 }

@@ -45,10 +45,6 @@
                 <div class="row">
                     <div class="col-md-4 mx-auto">
 
-                        <div class="page-brand">
-                            <i class="ion ion-ios-pulse-strong" aria-hidden="true"></i>
-                        </div>
-
                         <div class="card card-default widget">
                             <div class="card-heading">
                                 <h3 class="card-title">{{ __('Sign In') }}</h3>

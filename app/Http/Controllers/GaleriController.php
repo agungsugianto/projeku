@@ -94,7 +94,7 @@ class GaleriController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request,[
-            'gambar' => 'required',
+            'gambar' => '',
             'keterangan' => 'required'
         ]);
         $galeris = Galeri::findOrFail($id);
@@ -129,7 +129,7 @@ class GaleriController extends Controller
      */
     public function destroy($id)
     {
-        $galeris = galeri::findOrFail($id);
+        $galeris = Galeri::findOrFail($id);
         if ($galeris->gambar){
             $old_foto = $galeris->gambar;
             $filepath = public_path() . DIRECTORY_SEPARATOR . '/img/'

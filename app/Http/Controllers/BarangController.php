@@ -43,16 +43,18 @@ class BarangController extends Controller
             'nama_barang' => 'required',
             'kategori_id' => 'required',
             'harga' => 'required',
-            'foto' => 'required',
-            'deskripsi' => 'required'
+            'foto' => '',
+            'deskripsi' => 'required',
+            'beli' => 'required'
         ]);
 
         $barangs = new Barang;
         $barangs->nama_barang = $request->nama_barang;
-        $barangs->slug = str_slug($request->nama_barang, '-');
+        $barangs->slug = str_slug($request->nama_barang, '-').'-'.str_random(6);
         $barangs->kategori_id = $request->kategori_id;
         $barangs->harga = $request->harga;
         $barangs->deskripsi = $request->deskripsi;
+        $barangs->beli = $request->beli;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $destinationPath = public_path().'/img/';
@@ -103,15 +105,17 @@ class BarangController extends Controller
             'nama_barang' => 'required|max:255',
             'kategori_id' => 'required|',
             'harga' => 'required',
-            'foto' => 'required',
-            'deskripsi' => 'required'
+            'foto' => '',
+            'deskripsi' => 'required',
+            'beli' => 'required'
         ]);
         $barangs = Barang::findOrFail($id);
         $barangs->nama_barang = $request->nama_barang;
-        $barangs->slug = str_slug($request->nama_barang, '-');
+        $barangs->slug = str_slug($request->nama_barang, '-').'-'.str_random(6);
         $barangs->kategori_id = $request->kategori_id;
         $barangs->harga = $request->harga;
         $barangs->deskripsi = $request->deskripsi;
+        $barangs->beli = $request->beli;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $destinationPath = public_path().'/img/';

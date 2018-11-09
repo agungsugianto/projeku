@@ -19,6 +19,7 @@
 				<li class="nav-item"><a class="nav-link" href="{{ route('kategori.index')}}"><i class="fa fa-newspaper-o nav-icon"></i>&nbsp Kategori</a></li>
 				<li class="nav-item"><a class="nav-link" href="{{ route('barang.index')}}"><i class="nav-icon fa fa-mobile-phone" style="font-size:36px"></i>&nbsp Barang</a></li>
 				<li class="nav-item"><a class="nav-link" href="{{ route('galeri.index')}}"><i class="fa fa-picture-o nav-icon"></i>&nbsp Galeri</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ route('promo.index')}}"><i class="fa fa-percent nav-icon"></i>&nbsp Promo</a></li>
 			</ul>
 		</li>
 	</ul>

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use File;
 use App\Barang;
 use App\Kategori;
+use Alert;
 use Illuminate\Http\Request;
 
 class BarangController extends Controller

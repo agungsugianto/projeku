@@ -80,7 +80,7 @@
 								data-endeasing="Power1.easeIn"
 								data-captionhidden="off">
 								<br>
-								<small>Cocok buat Anda yang suka mendengarkan musik ataupun beramin game,headphone ini siap untuk menyamankan Anda </small>
+								<small>Cocok buat Anda yang suka mendengarkan musik ataupun bermain game,headphone ini siap untuk menyamankan Anda </small>
 							</div>
 
 							<div class="tp-caption rs-caption-4 sft"

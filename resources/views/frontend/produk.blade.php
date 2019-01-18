@@ -191,11 +191,12 @@
 			</section> -->
 		<!-- MAIN CONTENT SECTION -->
 		<section class="mainContent clearfix productsContent">
-			<div class="container">
+		<div class="container">
+		<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-4 sideBar">
 						<div class="panel panel-default">
-							<div class="panel-heading">Product categories</div>
+							<div class="panel-heading">Kategori Produk</div>
 							<div class="panel-body">
 								<div class="collapse navbar-collapse navbar-ex1-collapse navbar-side-collapse">
 									<ul class="nav navbar-nav side-nav">
@@ -278,7 +279,7 @@
 									</div>
 									<div class="productCaption clearfix">
 										<h5>{{$data->nama_barang}}</h5>
-										<h3>Rp. {{$data->harga}}</h3><br>
+										<h3>Rp. {{number_format($data->harga,2,',','.')}}</h3><br>
 									</div>
 								</div>
 							</div>

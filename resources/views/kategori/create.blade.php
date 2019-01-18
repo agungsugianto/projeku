@@ -11,7 +11,7 @@
       <a href="{{ route('kategori.index')}}">Kategori</a>
     </li>
     <li class="breadcrumb-item active">
-      Create
+      Membuat
     </li>
   </ol>
 </nav>

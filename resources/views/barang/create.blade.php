@@ -11,7 +11,7 @@
       <a href="{{ route('barang.index')}}">Barang</a>
     </li>
     <li class="breadcrumb-item active">
-      Create
+      Membuat
     </li>
   </ol>
 </nav>
@@ -79,7 +79,7 @@
           @endif
         </div>
         <div class="form-group {{ $errors->has('beli') ? ' has-error' : '' }}">
-          <label class="control-label">Beli</label>
+          <label class="control-label">Masukan Link Tokopedia</label>
           <input type="text" name="beli" class="form-control"  required>
           @if ($errors->has('beli'))
           <span class="help-block">

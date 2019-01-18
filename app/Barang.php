@@ -16,4 +16,9 @@ class Barang extends Model
     {
         return 'slug';
     }
+    public static function scopeSearch($query, $searchTerm)
+    {
+        return $query->where('nama_barang', 'like', '%' .$searchTerm. '%')
+                     ->orWhere('nama_barang', 'like', '%' .$searchTerm. '%');
+    }
 }

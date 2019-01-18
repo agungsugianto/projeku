@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use File;
+use PDF;
 use App\Barang;
 use App\Kategori;
 use Alert;
@@ -28,7 +29,7 @@ class BarangController extends Controller
      */
     public function create()
     {
-        $kategori = Kategori::all();     
+        $kategori = Kategori::all();
         return view('barang.create',compact('kategori'));
     }
 

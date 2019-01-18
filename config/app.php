@@ -163,6 +163,9 @@ return [
         //Add
         Laratrust\LaratrustServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        Laravel\Scout\ScoutServiceProvider::class,
+        ScoutElastic \ ScoutElasticServiceProvider :: class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
     ],
 
@@ -216,6 +219,7 @@ return [
         //Add
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 

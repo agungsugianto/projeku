@@ -17,10 +17,10 @@
 <div class="col-md-12">
   <div class="card card-default widget">
     <div class="card-heading">
-      <h3 class="card-title">Table Galeri</h3>
+      <h3 class="card-title">Tabel Galeri</h3>
       <br>
       <div class="card-title">
-        <a id="modal-create" href="{{ route('galeri.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Add Galeri</a>
+        <a id="modal-create" href="{{ route('galeri.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Tambah Galeri</a>
       </div>
     </div>
     <div class="card-body">
@@ -30,7 +30,7 @@
             <th>No</th>
             <th>Gambar</th>
             <th>Keterangan</th>
-            <th colspan="3">Action</th>
+            <th colspan="3">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -46,13 +46,13 @@
               <p>{!!str_limit($data->keterangan)!!}</p>
             </td>
             <td>
-              <a class="btn btn-success" href="{{ route('galeri.edit',$data->id) }}">Edit</a>
+              <a class="btn btn-success" href="{{ route('galeri.edit',$data->id) }}">Ubah</a>
             </td>
             <td>
               <form method="post" action="{{ route('galeri.destroy',$data->id) }}">
                 <input name="_token" type="hidden" value="{{ csrf_token() }}">
                 <input type="hidden" name="_method" value="DELETE">
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Hapus</button>
               </form>
             </td>
           </tr>

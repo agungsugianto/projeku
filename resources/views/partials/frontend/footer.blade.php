@@ -47,4 +47,3 @@
 			</div>
 		</div>
 	</div>
-	@include('partials.frontend.tawk-to')

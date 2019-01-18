@@ -21,10 +21,10 @@
         <!-- <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
           <a href="#" class="widget-close"><i class="fa fa-times"></i></a> -->
       </div>
-      <h3 class="card-title">Table Promo</h3>
+      <h3 class="card-title">Tabel Promo</h3>
       <br>
       <div class="card-title">
-        <a id="modal-create" href="{{ route('promo.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Add Promo</a>
+        <a id="modal-create" href="{{ route('promo.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Tambah Promo</a>
       </div>
     </div>
     <div class="card-body">
@@ -33,7 +33,7 @@
           <tr>
             <th>No</th>
             <th>Promo</th>
-            <th colspan="3">Action</th>
+            <th colspan="3">Aksi</th>
           </tr>
         </thead>
         <tbody>
@@ -46,14 +46,14 @@
               <img src="{{ asset('/img/'.$data->foto.'')}}" width="70" height="70">
             </td>
             <td>
-              <a class="btn btn-round btn-success" href="{{ route('promo.edit',$data->id) }}">Edit</a>
+              <a class="btn btn-round btn-success" href="{{ route('promo.edit',$data->id) }}">Ubah</a>
             </td>
             <td>
             <td>
               <form method="post" action="{{ route('promo.destroy',$data->id) }}">
                 <input name="_token" type="hidden" value="{{ csrf_token() }}">
                 <input type="hidden" name="_method" value="DELETE">
-                <button type="submit" class="btn btn-round btn-danger">Delete</button>
+                <button type="submit" class="btn btn-round btn-danger">Hapus</button>
               </form>
             </td>
           </tr>

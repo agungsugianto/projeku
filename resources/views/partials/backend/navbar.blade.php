@@ -5,9 +5,7 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{{ url('/')}}">
     <img src="/img/logo.png" style="width:300px;">
-    </a>
     <ul class="nav navbar-nav navbar-right">
       <li class="nav-item dropdown active">
         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
@@ -32,9 +30,9 @@
         </ul>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">
+        <!-- <a href="#" class="nav-link">
         <img src="{{asset ('/spark/assets/img/avatar-500x500.png') }}" alt="Avatar" width="48" height="48" class="avatar img-circle" />
-        </a>
+        </a> -->
       </li>
     </ul>
   </div>

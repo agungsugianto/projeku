@@ -13,7 +13,7 @@
 		</li>
 		<li class="nav-item">
 			<a class="nav-container dropdown-toggle" data-toggle="collapse" data-parent="#sidebar-stacked" href="#p5">
-				<i class="ion ion-ios-list"></i> <span class="nav-text">Tables</span>
+				<i class="ion ion-ios-list"></i> <span class="nav-text">Tabel</span>
 			</a>
 			<ul class="nav nav-pills nav-stacked collapse" id="p5">
 				<li class="nav-item"><a class="nav-link" href="{{ route('kategori.index')}}"><i class="fa fa-newspaper-o nav-icon"></i>&nbsp Kategori</a></li>

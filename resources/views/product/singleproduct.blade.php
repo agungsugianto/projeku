@@ -128,7 +128,7 @@
 					<center><h1>{{$barangs->kategori->kategori}}</h1></center>
 				</div>
 									<h2>{{$barangs->nama_barang}}</h2>
-									<h3>Rp. {{$barangs->harga}}</h3>
+									<h3>Rp. {{number_format($barangs->harga,2,',','.')}}</h3>
 									<p>{!!($barangs->deskripsi)!!}</p>
 									<button><a href="{{$barangs->beli}}" class="btn btn-success">Beli Di Tokopedia &nbsp<img src="/img/Tokopedia.png" style="width:20px;"></button></a>
 										<!-- <button><a href="https://www.bukalapak.com/products?utf8=%E2%9C%93&source=navbar&from=omnisearch&search_source=omnisearch_organic&search%5Bhashtag%5D=&search%5Bkeywords%5D=hitz+fashion" class="btn btn-danger">Beli Via Bukalapak &nbsp<img src="/img/bl.png" style="width:25px;"></button></a> -->

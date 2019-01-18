@@ -11,7 +11,7 @@
       <a href="{{ route('promo.index')}}">Promo</a>
     </li>
     <li class="breadcrumb-item active">
-      Edit
+      Ubah
     </li>
   </ol>
 </nav>
@@ -24,7 +24,7 @@
         <!-- <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
           <a href="#" class="widget-close"><i class="fa fa-times"></i></a> -->
       </div>
-      <h3 class="card-title">Edit Promo</h3>
+      <h3 class="card-title">Ubah Promo</h3>
     </div>
     <div class="card-body">
       <form action="{{ route('promo.update',$promos->id) }}" method="post" enctype="multipart/form-data" >
@@ -42,7 +42,7 @@
           @endif
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Edit</button>
+          <button type="submit" class="btn btn-primary">Ubah</button>
         </div>
       </form>
     </div>

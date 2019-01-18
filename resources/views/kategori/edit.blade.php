@@ -11,7 +11,7 @@
       <a href="{{ route('kategori.index')}}">Kategori</a>
     </li>
     <li class="breadcrumb-item active">
-      Edit
+      Ubah
     </li>
   </ol>
 </nav>
@@ -40,7 +40,7 @@
           @endif
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Edit</button>
+          <button type="submit" class="btn btn-primary">Ubah</button>
         </div>
       </form>
     </div>

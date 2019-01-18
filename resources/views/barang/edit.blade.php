@@ -11,7 +11,7 @@
       <a href="{{ route('barang.index')}}">Barang</a>
     </li>
     <li class="breadcrumb-item active">
-      Edit
+      Ubah
     </li>
   </ol>
 </nav>
@@ -24,7 +24,7 @@
         <!-- <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
           <a href="#" class="widget-close"><i class="fa fa-times"></i></a> -->
       </div>
-      <h3 class="card-title">Edit Kategori</h3>
+      <h3 class="card-title">Ubah Kategori</h3>
     </div>
     <div class="card-body">
       <form action="{{ route('barang.update',$barangs->id) }}" method="post" enctype="multipart/form-data" >
@@ -82,7 +82,7 @@
           @endif
         </div>
         <div class="form-group {{ $errors->has('beli') ? ' has-error' : '' }}">
-          <label class="control-label">Beli</label>
+          <label class="control-label">Masukan Link Tokopedia</label>
           <input type="text" name="beli" class="form-control" value="{{ $barangs->beli }}"  required>
           @if ($errors->has('beli'))
           <span class="help-block">
@@ -91,7 +91,7 @@
           @endif
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Edit</button>
+          <button type="submit" class="btn btn-primary">Ubah</button>
         </div>
       </form>
     </div>

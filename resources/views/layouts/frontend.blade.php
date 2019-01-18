@@ -55,7 +55,6 @@
         <div class="block"></div>
       </div>
     </div>
-    @include('partials.frontend.topbar')
     <div class="main-wrapper">
       <!-- HEADER -->
       <div class="header clearfix">
@@ -123,7 +122,7 @@
               </a>
               <br>
               <h5 style="background-color:#cccccc;">
-                <center>Rp. {{$data->harga}}</center>
+                <center>Rp. {{number_format($data->harga,2,',','.')}}</center>
               </h5>
               <br><br>
             </div>
@@ -131,6 +130,11 @@
         </div>
       </div>
       @endforeach
+			<div class="col-md-4"></div>
+				<div class="col-md-3"></div>
+				<div class="col-md-2">
+				{{$barangs->links()}}</div>
+				<div class="col-md-3">
       <!-- <div class="page-header">
         <h4>Featured Products</h4>
         </div>

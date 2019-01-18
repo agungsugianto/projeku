@@ -11,7 +11,7 @@
       <a href="{{ route('galeri.index')}}">Galeri</a>
     </li>
     <li class="breadcrumb-item active">
-      Edit
+      Ubah
     </li>
   </ol>
 </nav>
@@ -20,7 +20,7 @@
 <div class="col-md-12">
   <div class="card card-default widget">
     <div class="card-heading">
-      <h3 class="card-title">Table Galeri</h3>
+      <h3 class="card-title">Tabel Galeri</h3>
     </div>
     <div class="card-body">
       <form action="{{ route('galeri.update',$galeris->id) }}" method="post" enctype="multipart/form-data" >
@@ -46,7 +46,7 @@
           @endif
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Tambah</button>
+          <button type="submit" class="btn btn-primary">Ubah</button>
         </div>
       </form>
     </div>

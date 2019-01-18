@@ -11,7 +11,7 @@
       <a href="{{ route('galeri.index')}}">Galeri</a>
     </li>
     <li class="breadcrumb-item active">
-      Create
+      Membuat
     </li>
   </ol>
 </nav>
@@ -20,7 +20,7 @@
 <div class="col-md-12">
   <div class="card card-default widget">
     <div class="card-heading">
-      <h3 class="card-title">Table Kategori</h3>
+      <h3 class="card-title">Table Galeri</h3>
     </div>
     <div class="card-body">
       <form action="{{ route('galeri.store') }}" method="post" enctype="multipart/form-data">

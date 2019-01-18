@@ -8,7 +8,7 @@
       <a href="{{ url('home')}}"><i class="ion ion-home"></i> Home</a>
     </li>
     <li class="breadcrumb-item active">
-      Category
+      Kategori
     </li>
   </ol>
 </nav>
@@ -21,10 +21,10 @@
         <!-- <a href="#" class="widget-minify"><i class="fa fa-chevron-up"></i></a>
           <a href="#" class="widget-close"><i class="fa fa-times"></i></a> -->
       </div>
-      <h3 class="card-title">Table Kategori</h3>
+      <h3 class="card-title">Tabel Kategori</h3>
       <br>
       <div class="card-title">
-        <a id="modal-create" href="{{ route('kategori.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Add Category</a>
+        <a id="modal-create" href="{{ route('kategori.create') }}" class="btn btn-round btn-primary" title="Add"><i class="fa fa-plus">&nbsp;</i>Tambah Kategori</a>
       </div>
     </div>
     <div class="card-body">
@@ -43,7 +43,7 @@
             <td> {{ $no++ }} </td>
             <td> {{ $data->kategori }} </td>
             <td>
-              <a class="btn btn-round btn-primary" href=" {{ route('kategori.edit',$data->id)}} " title="Edit"><i class="fa fa-edit">&nbsp;</i> Edit Data</a>
+              <a class="btn btn-round btn-primary" href=" {{ route('kategori.edit',$data->id)}} " title="Edit"><i class="fa fa-edit">&nbsp;</i> Ubah Data</a>
             </td>
             <td>
               <form method="post" action="{{ route('kategori.destroy',$data->id) }}">
